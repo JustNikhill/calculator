@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-1">
             <img 
-              src="/icon.svg" 
+              src={`${import.meta.env.BASE_URL}icon.svg`}
               alt="Coreva" 
               className="h-10 w-10 object-contain"
             />

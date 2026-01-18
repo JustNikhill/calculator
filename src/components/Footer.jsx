@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-1 mb-4">
               <img 
-                src="/icon.svg" 
+                src={`${import.meta.env.BASE_URL}icon.svg`}
                 alt="Coreva" 
                 className="h-10 w-10 object-contain"
               />
