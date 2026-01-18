@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Coreva - AI Agents That Run Your Organization</title>
-    <script type="module" crossorigin src="/assets/index-BswL461r.js"></script>
+    <script type="module" crossorigin src="/assets/index-DK4mlscJ.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BBCZ09ot.css">
   </head>
   <body>
@@ -24,7 +24,8 @@
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
       (function(l) {
-        if (l.search[1] === '/' ) {
+        // Only process if query string starts with '/?' and not already processed
+        if (l.search[1] === '/' && !l.search.includes('&/')) {
           var decoded = l.search.slice(1).split('&').map(function(s) { 
             return s.replace(/~and~/g, '&')
           }).join('?');

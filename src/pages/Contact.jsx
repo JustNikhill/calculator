@@ -68,7 +68,14 @@ export default function Contact() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
               Send us a message
             </h2>
-            <form className="space-y-6">
+            <form 
+              className="space-y-6"
+              onSubmit={(e) => {
+                e.preventDefault();
+                // Form handling logic here - for now just prevent default
+                alert('Thank you for your message! We will get back to you soon.');
+              }}
+            >
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                   Name
